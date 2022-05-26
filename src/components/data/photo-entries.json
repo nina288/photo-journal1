@@ -1,0 +1,50 @@
+{
+  "itemlist" :
+  [
+    {
+      "src"      : "feel1.jpg",
+      "caption"  : "The heart in the palms of your hands",
+      "location" : "Berlin, Germany"
+    },
+
+    {
+      "src"      : "feel2.jpg",
+      "caption"  : "A smile from the inside",
+      "location" : "Beverly Hills, USA"
+    },
+
+    {
+      "src"      : "feel3.jpg",
+      "caption"  : "Friendship is the strongest",
+      "location" : "Toronto, Canada"
+    },
+
+    {
+      "src"      : "feel4.jpg",
+      "caption"  : "More than sympathy",
+      "location" : "Kona, Hawaii, USA"
+    },
+
+    {
+      "src"      : "fell5.jpg",
+      "caption"  : "More happiness",
+      "location" : "San Francisco, USA"
+    },
+
+    {
+      "src"      : "feel6.jpg",
+      "caption"  : "Only in private",
+      "location" : "London, UK"
+    },
+ {
+      "src"      : "feel7.jpg",
+      "caption"  : "Only happiness",
+      "location" : "London, UK"
+    },
+ {
+      "src"      : "feel8.jpg",
+      "caption"  : "Super happy",
+      "location" : "London, UK"
+    }
+  ]
+}
