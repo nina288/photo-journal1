@@ -142,9 +142,9 @@ this.setState({loggedIn:false});
         // logged Out
         return (
           <div className="user-manager-block user-manager-block-inactive-background">
-            <p>user ID:&nbsp;<input type="text" value={this.state.userIdFieldValue} onChange={this.handleUserIdChange}/>&nbsp;
-            password:&nbsp;<input type="text" value={this.state.passwordFieldValue} onChange={this.handlePasswordChange}/>&nbsp;
-            <input className="button" type="button" value="Регистрация" onClick={this.logIn} /></p>
+            <div className="users"><p>user ID:&nbsp;<input type="text" value={this.state.userIdFieldValue} onChange={this.handleUserIdChange}/>&nbsp;</p>
+         <p>   password:&nbsp;<input type="text" value={this.state.passwordFieldValue} onChange={this.handlePasswordChange}/>&nbsp;</p>
+            <input className="button" type="button" value="Регистрация" onClick={this.logIn} /></div>
             { this.props.showMessageArea(this.state) }
             {this.state.instructions }
           </div>
