@@ -1,7 +1,7 @@
 import React from 'react';
 import BannerImage from './components/BannerImage';
-import AlbumMaker from './components/AlbumMaker';
-import UserManager from './components/UserManager';
+
+
 import './App.css';
 import ContentArea from './components/ContentArea';
 
