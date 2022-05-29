@@ -50,6 +50,7 @@ class UserManager extends React.Component {
     // these are necessary for "this" to point to this object
      this.handleUserIdChange = this.handleUserIdChange.bind(this);
      this.handlePasswordChange = this.handlePasswordChange.bind(this);
+     
     // Task 7 this.idChangeSubscribe = this.idChangeSubscribe.bind(this);
     this.logIn = this.logIn.bind(this);
     this.logOut = this.logOut.bind(this);
@@ -63,6 +64,7 @@ class UserManager extends React.Component {
   handlePasswordChange(event) {
   this.setState({passwordFieldValue:event.target.value});
   }
+ 
 
   // this method is for listener to add themselves to the list so that
   // they will get notified when the user ID has changed
@@ -89,8 +91,8 @@ class UserManager extends React.Component {
     
     // Simulated database lookup!!! We would not do this in real life!
     
-    if (userIdEntered.trim() === "nina" && passwordEntered.trim() === "12345") {
-      userName = "Nina Chekalina";
+    if (userIdEntered.trim() !="" && passwordEntered.trim() != "") {
+      userName =userIdEntered ;
       successful = true;
     }
     
@@ -105,11 +107,11 @@ class UserManager extends React.Component {
       this.setState( { loggedIn: true,
          userId: userIdEntered.trim(),
           userName: userName, 
-          instructions: "You can now comment on photos!" },
+          instructions: "Вы можете комментировать фото!" },
           () => { this.props.logInCallback(this.state); } );
           
           }    else {
-      this.setState( { instructions: "Incorrect user ID or password. Try again." } );
+      this.setState( { instructions: "Неверный ID или пароль. Повторите попытку." } );
     }
 
   }
@@ -145,8 +147,11 @@ this.setState({loggedIn:false});
             <div className="users"><p>user ID:&nbsp;<input type="text" value={this.state.userIdFieldValue} onChange={this.handleUserIdChange}/>&nbsp;</p>
          <p>   password:&nbsp;<input type="text" value={this.state.passwordFieldValue} onChange={this.handlePasswordChange}/>&nbsp;</p>
             <input className="button" type="button" value="Регистрация" onClick={this.logIn} /></div>
-            { this.props.showMessageArea(this.state) }
+                 { this.props.showMessageArea(this.state) }
             {this.state.instructions }
+
+          
+       
           </div>
         );
     }

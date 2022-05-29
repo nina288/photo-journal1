@@ -7,11 +7,17 @@
   pointer-events: none;
 }
 
-
+.banner{
+  height: 80%;
+  width: 80%;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+  .banner{
+    animation: banner-spin infinite 10s linear;
   }
 }
 
@@ -31,11 +37,12 @@
 }
 
 
-@keyframes App-logo-spin {
+
+@keyframes banner-spin {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(20deg);
   }
 }
