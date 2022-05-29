@@ -1,7 +1,7 @@
 import React from 'react';
 import PhotoEntry from './PhotoEntry';
 import entries from './data/photo-entries';
-import UserManager from './UserManager';
+
 class AlbumMaker extends React.Component {
 
   render() {
@@ -17,7 +17,7 @@ class AlbumMaker extends React.Component {
           })
         }
 
-       {this.props.commentFieldValue} 
+     
 
       { /* <PhotoEntry src="berlin.jpg" location="Berlin, Germany" caption="Heart of Europe" />
         <PhotoEntry src="beverly-hills.jpg" location="Beverly Hills, USA" caption="Southern California" />

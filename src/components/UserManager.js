@@ -91,7 +91,7 @@ class UserManager extends React.Component {
     
     // Simulated database lookup!!! We would not do this in real life!
     
-    if (userIdEntered.trim() !="" && passwordEntered.trim() != "") {
+    if (userIdEntered.trim() !=="" && passwordEntered.trim() !== "") {
       userName =userIdEntered ;
       successful = true;
     }
